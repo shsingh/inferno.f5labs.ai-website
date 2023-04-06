@@ -21,16 +21,13 @@ jobs:
         with:
           path: ~/.cargo
           key: cargo-zola
-      - name: "Install mdbook & svgbob"
-        run: cargo install mdbook mdbook-svgbob
       - name: "Checkout"
         uses: actions/checkout@master
-      - name: "Checkout acton repo"
+      - name: "Checkout repo"
         uses: actions/checkout@master
         with:
           repository: "inferno-f5labs-ai/inferno.f5labs.ai-website"
-          path: "acton"
-          token: ${{ secrets.ACTBOT_PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: "Build and deploy"
         uses: shalzz/zola-deploy-action@master
         env:
