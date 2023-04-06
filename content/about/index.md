@@ -18,11 +18,11 @@ Contact [inferno@f5.com](mailtp:inferno@f5.com) for more information.
 
 ## Our Team
 
-![[Sagar Bhure](../assets/sagar.jpg)](https://github.com/sagarbhure)
-![[Vamsi](../assets/vamsi.jpg)](https://github.com/shsingh)
-![[Nishanth M S](../assets/nishanth.jpg)](https://github.com/shsingh)
-![[Buchibabu](../assets/buchibabu.jpg)](https://github.com/shsingh)
-![[Shain Singh](../assets/shain.jpg)](https://github.com/shsingh)
+[![Sagar Bhure](../assets/sagar.jpg)](https://linkedin.com/in/sagarbhure/)
+[![Vamsi](../assets/vamsi.jpg)](https://linkedin.com/in/suman-kanukollu/)
+[![Nishanth M S](../assets/nishanth.jpg)](https://linkedin.com/in/msnishanth/)
+[![Buchibabu](../assets/buchibabu.jpg)](https://linkedin.com/in/buchibabu-bandarupally-685b8868/)
+[![Shain Singh](../assets/shain.jpg)](https://linkedin.com/in/shsingh/)
 
 ## Credits
 
