@@ -16,7 +16,15 @@ recommended practices to mitigate them.
 
 Contact [inferno@f5.com](mailtp:inferno@f5.com) for more information.
 
-### Credits
+## Our Team
+
+![[Sagar Bhure](../assets/sagar.jpg)](https://github.com/sagarbhure)
+![[Vamsi](../assets/vamsi.jpg)](https://github.com/shsingh)
+![[Nishanth M S](../assets/nishanth.jpg)](https://github.com/shsingh)
+![[Buchibabu](../assets/buchibabu.jpg)](https://github.com/shsingh)
+![[Shain Singh](../assets/shain.jpg)](https://github.com/shsingh)
+
+## Credits
 
 [Zola](https://www.getzola.org) is a fast static site generator in a single binary with everything built-in.
 
