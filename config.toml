@@ -13,8 +13,8 @@ build_search_index = true
 highlight_code = true
 
 [extra]
-theme = juice
 # Put all your custom variables here
+theme = "juice"
 juice_extra_menu = [
   { title = "Github", link = "https://github.com/inferno-f5labs-ai" },
 ]
