@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #FED43F;
+        /* Primary theme text color */
+        --primary-text-color: #543631;
+        --primary-text-color-over: #000;
+        /* Primary theme link color */
+        --primary-link-color: #F9BB2D;
+        /* Secondary color: the background body color */
+        --secondary-color: #fcfaf6;
+        --secondary-text-color: #303030;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #d46e13;
+        --toc-background-color: white;
+        --code-color: #4a4a4a;
+        --code-background-color: white;
+
+        --shadow-color: #ddd;
+
+        /* Font used for headers (h1 & h2) */
+        --header-font-family: "Fira Sans", sans-serif;
+        /* Font used for text */
+        --text-font-family: "Fira Sans", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary-color: #382929;
+            --primary-text-color: #d7d7d7;
+            --primary-text-color-over: #FFF;
+            --primary-link-color: #9b9b9b;
+            --secondary-color: #282828;
+            --secondary-text-color: #f2f2f2;
+            --toc-highlight-text-color: #f2f2f2;
+            --toc-background-color: #3a3a3a;
+            --code-color: white;
+            --code-background-color: #4a4a4a;
+
+            --shadow-color: #202020;
+            --header-font-family: "Fira Sans", sans-serif;
+            --text-font-family: "Fira Sans", sans-serif;
+        }
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="https://inferno.f5labs.ai/juice.css">
+    
+    
+</head>
+
+<body>
+    
+
+    <header class="pos-absolute" style="background-color: transparent">
+         
+<a href="https://inferno.f5labs.ai/">
+    <div class="logo">
+        <img src="https://inferno.f5labs.ai/inferno.svg" alt="logo" width="2%" />
+        Inferno
+    </div>
+</a>
+
+<nav>
+      
+    <a class="nav-item subtitle-text" href="https://inferno.f5labs.ai/about/">About</a>
+       
+    <a class="nav-item subtitle-text" href="https://inferno.f5labs.ai/projects/">Projects</a>
+       
+    <a class="nav-item subtitle-text" href="https://inferno.f5labs.ai/changelog/">Changelog</a>
+       
+    <a class="nav-item subtitle-text" href="https://github.com/inferno-f5labs-ai">Github</a>
+     
+</nav>
+
+    </header>
+
+    <div class="hero">
+        
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <section class="text-center">
+            <!-- <h1 class="heading-text" style="font-size: 50px"> -->
+                <!-- Inferno -->
+            <!-- </h1> -->
+            <h3 class="title-text">
+                Project Team
+                <p><a href="https://linkedin.com/in/sagarbhure/"><img src="assets/sagar.jpg" alt="Sagar Bhure" width="15%"/></a>
+                <a href="https://linkedin.com/in/suman-kanukollu/"><img src="assets/vamsi.jpg" alt="Vamsi" width="15%"/></a>
+                <a href="https://linkedin.com/in/msnishanth/"><img src="assets/nishanth.jpg" alt="Nishanth M S" width="15%"/></a>
+                <a href="https://linkedin.com/in/buchibabu-bandarupally-685b8868/"><img src="assets/buchibabu.jpg" alt="Buchibabu" width="15%"/></a>
+                <a href="https://linkedin.com/in/shsingh/"><img src="assets/shain.jpg" alt="Shain Singh" width="15%"/></a></p>
+                Contact: <a href="mailto:inferno@f5.com"> inferno@f5.com </a>
+            </h3>
+            <div>
+                <a class="github-button" href="https://github.com/inferno-f5labs-ai/inferno.f5labs.ai-code" data-size="large" data-show-count="true"
+                    aria-label="Star on GitHub">Star</a>
+                <a class="github-button" href="https://github.com/inferno-f5labs-ai/inferno.f5labs.ai-code/fork" data-size="large"
+                    data-show-count="true" aria-label="Fork on GitHub">Fork</a>
+            </div>
+        </section>
+        <img class="hero-image" style="width: 50%" src="https://inferno.f5labs.ai/inferno.svg">
+
+        <div class="explore-more text"
+            onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+            Explore More ⇩
+        </div>
+        <style>
+            .hero section {
+                padding: 0 5rem;
+            }
+
+            @media screen and (max-width: 768px) {
+                .hero section {
+                    padding: 0 2rem;
+                }
+
+                .hero-image {
+                    display: none
+                }
+            }
+        </style>
+        
+    </div>
+
+    
+
+    <main>
+        
+        
+        
+        
+        
+        <div class="toc">
+            <div class="toc-sticky">
+                
+                <div class="toc-item">
+                    <a class="subtext" href="https://inferno.f5labs.ai/#key-hypothesis">Key Hypothesis</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="https://inferno.f5labs.ai/#example-workflow">Example Workflow</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="https://inferno.f5labs.ai/#secure-principles-for-mlops">Secure Principles for MLOps</a>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+
+        <div class="content text">
+            
+            <div id="features" class="heading-text">Overview</div>
+            <h2 id="key-hypothesis">Key Hypothesis</h2>
+<p>Insights generated by Machine Learning products need protection against adversaries, which help establish end-user trust.
+This project establishes a risk-assessment matrix based on the complexity and severity of attack vectors and potential mitigation steps for use by data scientists.</p>
+<p>Project Inferno aims to provide guidance on securing Machine Learning pipelines against possible attack vectors, and monitor security of the Machine Learning environments.</p>
+<h2 id="example-workflow">Example Workflow</h2>
+<p>After the decision to develop a Machine Learning system, there are security questions for consideration.
+Many decisions at this stage are driven by scope: is the intent for the model to be operational, or
+research purposes only? An example workflow diagram is intended to help assess:</p>
+<p><img src="https://inferno.f5labs.ai/ml-workflow.png" alt="Example ML Workflow" /></p>
+<h2 id="secure-principles-for-mlops">Secure Principles for MLOps</h2>
+<ul>
+<li>Enable your developers: Are your data scientists and developers aware of ML security threats and model failure modes</li>
+<li>Design for security: What does your system look like if the ML component fails?</li>
+<li>Minimize an adversary's knowledge: Understand that attackers can gather information to strengthen attacks.</li>
+<li>Secure your supply chain: Obtain your data and models from a trusted source.</li>
+<li>Track your assets: Operation and lifecycle management of models and datasets.</li>
+</ul>
+
+            
+        </div>
+
+        
+        
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <a href="mailto:inferno@f5.com">inferno@f5.com</a> © 2023
+        </small>
+    </footer>
+    
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>
