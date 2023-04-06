@@ -1,19 +1,20 @@
 +++
 title = "About"
 description = "About"
-weight = 3
+weight = 1
 +++
 
 # Inferno
 
-Built by [Huhu.io](https://huhu.io), adopted by a several product sites.
+Inferno is an internal project at [f5.com](https://f5.com) combinining
 
-## Zola
+- MLSec
+- MLOps
+
+to provide guides and hands-on demos for AI/ML related topics.
+
+## Credits
 
 [Zola](https://www.getzola.org) is a fast static site generator in a single binary with everything built-in.
 
-## Huhu.io
-
-[Huhu.io](https://huhu.io) is a global community of coders dedicated to making cool stuff coders need and want.
-We focus on enabling the developer community by curating, incubating, and launching tools based on great ideas,
-providing support and funding that allows our engineers to develop what they want, the way they want.
+[Juice](https://juice.huhu.io) is an intuitive, elegant, and lightweight Zola theme.

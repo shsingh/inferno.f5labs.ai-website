@@ -1,7 +1,7 @@
 +++
 title = "Changelog"
 description = "Changelog"
-weight = 2
+weight = 4
 +++
 
 # v0.0.1 - 2023-04-06
