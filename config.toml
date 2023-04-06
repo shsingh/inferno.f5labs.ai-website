@@ -15,6 +15,8 @@ highlight_code = true
 [extra]
 # Put all your custom variables here
 theme = "juice"
+juice_logo_name = "Juice"
+juice_logo_path = "juice.svg"
 juice_extra_menu = [
   { title = "Github", link = "https://github.com/inferno-f5labs-ai" },
 ]
