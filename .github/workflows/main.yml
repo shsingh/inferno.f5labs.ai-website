@@ -1,36 +1,36 @@
+name: Zola on GitHub Pages
+
 on:
   push:
+    branches:
+      - main 
   pull_request:
-  workflow_dispatch:
+  
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.ref != 'refs/heads/main'
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v3.0.0
+      - name: Build only 
+        uses: shalzz/zola-deploy-action@v0.17.2
+        env:
+          BUILD_DIR: docs
+          BUILD_ONLY: true
+          BUILD_FLAGS: --drafts
+          # A GitHub token is not necessary when BUILD_ONLY is true
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
   build_and_deploy:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     steps:
-      - name: "Set vars for build only if not on main"
-        run: |
-          echo "PAGES_BRANCH=test-pages" >> $GITHUB_ENV
-        if: github.ref != 'refs/heads/main'
-      - name: "Set vars for deploy if on main"
-        run: |
-          echo "PAGES_BRANCH=gh-pages" >> $GITHUB_ENV
-        if: github.ref == 'refs/heads/main'
-      - name: "Install cargo"
-        run: sudo apt-get install -qy cargo
-      - name: "Cache cargo"
-        uses: actions/cache@v3
-        with:
-          path: ~/.cargo
-          key: cargo-zola
-      - name: "Checkout"
-        uses: actions/checkout@master
-      - name: "Checkout repo"
-        uses: actions/checkout@master
-        with:
-          repository: "inferno-f5labs-ai/inferno.f5labs.ai-website"
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - name: "Build and deploy"
-        uses: shalzz/zola-deploy-action@master
+      - name: Checkout main
+        uses: actions/checkout@v3.0.0
+      - name: Build and deploy
+        uses: shalzz/zola-deploy-action@v0.17.2
         env:
-          BUILD_DIR: .
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PAGES_BRANCH: ${{ env.PAGES_BRANCH }}
+          BUILD_DIR: docs
+          PAGES_BRANCH: gh-pages
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
